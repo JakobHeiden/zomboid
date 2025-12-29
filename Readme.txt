@@ -21,6 +21,14 @@ Firewall freigeben:
 - C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\jre64\bin\java.exe
 - C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\jre64\bin\javaw.exe
 
+manuell files für mod kopieren: ( https://steamcommunity.com/sharedfiles/filedetails/?id=3629431142 )
+"
+To enable the fire-hardened spear fix:
+- Browse to steamapps\workshop\content\108600\3629431142\mods\RPB42Fixes\42.13.1\media
+- Copy the zombie folder from there to steamapps\common\Project Zomboid Dedicated Server\java (or steamapps\common\ProjectZomboid for single-player/host)
+"
+-> beides gemacht
+
 starten mit Dedicated Server\StartServer64 - TulipsServer.bat um auf den verwendeten Servernamen "Tulips_Server" zu verweisen.
 
 Client Commands

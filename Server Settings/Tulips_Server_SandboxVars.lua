@@ -142,7 +142,7 @@ SandboxVars = {
     -- Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Default: 0.60
     SurvivalGearsLootNew = 0.1,
     -- Canned and dried food, beverages. Min: 0.00 Max: 4.00 Default: 0.60
-    CannedFoodLootNew = 0.3,
+    CannedFoodLootNew = 0.15,
     -- Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Default: 0.60
     WeaponLootNew = 0.1,
     -- Also includes weapon attachments. Min: 0.00 Max: 4.00 Default: 0.60
@@ -150,7 +150,7 @@ SandboxVars = {
     -- Loose ammo, boxes and magazines. Min: 0.00 Max: 4.00 Default: 0.60
     AmmoLootNew = 0.15,
     -- Vehicle parts and the tools needed to install them. Min: 0.00 Max: 4.00 Default: 0.60
-    MechanicsLootNew = 0.05,
+    MechanicsLootNew = 0.1,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0.00 Max: 4.00 Default: 0.60
     OtherLootNew = 0.1,
     -- All wearable items that are not containers. Min: 0.00 Max: 4.00 Default: 0.60
@@ -1009,153 +1009,20 @@ SandboxVars = {
         Glassmaking = 1.0,
     },
     Firearms = {
-        -- Whether improvised suppressors are craftable, even if this option is not checked the recipe will show up in-game they just won't be craftable.
         ImprovisedSuppressors = true,
-        -- With this activated improvised will not break no matter what the break chance is.
         SuppressorBreak = true,
-        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default = One Use
-        -- 1 = One Use
-        -- 2 = High
-        -- 3 = Medium
-        -- 4 = Low
         BottleSuppressorBreakChance = 1,
-        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default = High
-        -- 1 = One Use
-        -- 2 = High
-        -- 3 = Medium
-        -- 4 = Low
         FlashlightSuppressorBreakChance = 2,
-        -- How effective a suppressor is on a firearm that uses .22 LR rounds. Default = 80%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness22 = 3,
-        -- How effective a suppressor is on a firearm that uses 9mm rounds. Default = 70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness9mm = 4,
-        -- How effective a suppressor is on a firearm that uses 10mm Auto rounds. Default = 70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness10mm = 4,
-        -- How effective a suppressor is on a firearm that uses .45 ACP rounds. Default = 70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness45 = 4,
-        -- How effective a suppressor is on a firearm that uses .44 Magnum rounds. Default = 70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness44 = 4,
-        -- How effective a suppressor is on a firearm that uses .38 Special rounds. Default = 80%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness38 = 3,
-        -- How effective a suppressor is on a firearm that uses .223 and 5.56x45mm rounds. Default = 60%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness223 = 5,
-        -- How effective a suppressor is on a firearm that uses .308 and 7.62x51mm rounds. Default = 50%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectiveness308 = 6,
-        -- How effective a suppressor is on shotgun. Default = 30%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectivenessShotgunShells = 8,
-        -- How effective suppressors are on revolvers are, on top of the effectiveness based on caliber. Default = 60%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectivenessRevolver = 5,
-        -- How effective improvised suppressors are, on top of the effectiveness based on caliber. Default = 20%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        -- 10 = 10%
         SuppressorEffectivenessImprovised = 9,
         -- Default = Insanely Rare
         -- 1 = None (not recommended)
@@ -1166,168 +1033,109 @@ SandboxVars = {
         -- 6 = Common
         -- 7 = Abundant
         LootSuppressor = 2,
-        -- Whether or not AK47 rifles spawn.
         SpawnAK47 = true,
-        -- Whether AKM Rifles spawns.
         SpawnAKM = true,
-        -- Whether AR-15 Rifles spawns.
         SpawnAR15 = true,
-        -- Whether Colt Single Action Army Revolvers and the associated .44-40 WCF ammo are spawned.
         SpawnColtPeacemaker = true,
-        -- Whether Colt Ace pistols and the associated .22 LR ammo spawn.
         SpawnColtAce = true,
-        -- Whether Colt Anaconda Revolvers spawn.
         SpawnAnaconda = true,
-        -- Whether Colt Commando Assault Rifles spawn.
         SpawnM733 = true,
-        -- Whether the Colt Delta 10mm Auto spawns.
         SpawnColtDelta = true,
-        -- Whether Colt Python Revolvers spawn.
         SpawnPython = true,
-        -- Whether the Colt Single Action Frontier Scout and the associated .22 LR ammo spawns.
         ColtScout = true,
-        -- Whether the FN Fal spawns.
         SpawnFNFal = true,
-        -- Whether the H&K G3 spawns.
         SpawnG3 = true,
-        -- Whether Glock 17 Pistols and their magazines spawn.
         SpawnGlock17 = true,
-        -- Whether to spawn the iconic ICA19 from the Hitman series.
         SpawnICA19 = true,
         SpawnM16A2 = true,
-        -- Whether M1Garand rifles spawn.
         SpawnM1Garand = true,
-        -- Whether M24 Rifles spawns.
         SpawnM24 = true,
-        -- Whether the Ithaca 37 spawns.
         SpawnM37 = true,
-        -- Whether M4 Assault Rifles spawn.
         SpawnM4 = true,
-        -- Whether the M60 spawns.
         SpawnM60 = true,
-        -- Whether or not MAC-10 SMGs spawn.
         SpawnMAC10 = true,
-        -- Whether the Mossberg 590 Shotgun spawns.
         SpawnMossberg500 = true,
-        -- Whether the Mossberg 590A1 Tactical Shotgun spawns.
         SpawnMossberg500Tactical = true,
-        -- Whether or not MP5 SMGs spawn.
         SpawnMP5 = true,
-        -- Whether the Remington 870 Shotgun spawns.
         SpawnRemington870 = true,
-        -- Whether Rossi Model 92 lever action rifles and the associated .357 ammo are spawned.
         SpawnRossi92 = true,
-        -- Whether Ruger Model 77 Rifles using the caliber .22 LR spawn.
         SpawnRuger22 = true,
-        -- Whether or not SKS rifles spawn.
         SpawnSKS = true,
-        -- Whether or not SPAS12 and LAW12 spawn.
         SpawnSPAS12 = true,
-        -- Whether or not UZI SMGs spawn.
         SpawnUZI = true,
-        -- Whether Marlin Model 1894 lever action rifles spawn.
         SpawnMarlin1894 = true,
-        -- Whether Winchester Model 1894 lever action rifles are spawned.
         SpawnWinchester94 = true,
-        -- Whether or not any suppressors can be found in the world.
         SpawnSuppressors = true,
-        -- Whether or not handgun suppressors(9mm, .45 ACP) can be found in the world.
         SpawnHandgunSuppressors = true,
-        -- Whether or not rifle suppressors(.22 LR, .223/5.56x45mm, and .308/7.62x51mm) can be found in the world.
         SpawnRifleSuppressors = true,
-        -- Whether or not shotgun suppressors can be found in the world.
         SpawnShotgunSuppressors = true,
-        -- Whether or not .38 Special & .357 caliber suppressors can be found in the world.
         SpawnRevolverSuppressors = true,
     },
     SOTO = {
-        -- Player can earn additional Fitness XP once per game minute while running.
         AddFitXPWhileRun = true,
-        -- Possibility to obtain XP boosts while leveling agility skills.
-        -- For example, player can obtain Sneaky trait to increase their XP gain for Sneaking skill.
         AgilityTraitsObtainable = true,
-        -- Possibility to obtain XP boosts while leveling combat skills.
-        -- For example, player can obtain Baseball Player trait to increase their XP gain for Long Blunt skill.
         CombatTraitsObtainable = true,
-        -- Possibility to obtain XP boosts while leveling survivalist skills.
-        -- For example, player can obtain Forager trait to increase their XP gain for Foraging skill.
         SurvTraitsObtainable = false,
-        -- Possibility to obtain XP boosts while leveling crafting skills.
-        -- For example, player can obtain Culinary trait to increase their XP gain for Cooking skill.
         CraftTraitsObtainable = false,
-        -- Possibility to obtain XP boosts while leveling firearm skills.
-        -- For example, player can obtain Shooter trait to increase their XP gain for Aiming skill.
         FirearmTraitsObtainable = true,
         CowardlyRemovable = true,
-        -- Should be lower than Max. 1 day = 24 Min: 1 Max: 100000 Default: 168
+        -- Min: 1 Max: 100000 Default: 168
         CowardlyHoursToRemoveMin = 168,
-        -- Should be higher than Min. 1 day = 24 Min: 1 Max: 100000 Default: 336
+        -- Min: 1 Max: 100000 Default: 336
         CowardlyHoursToRemoveMax = 336,
-        -- Should be lower than Max. Min: 1 Max: 100000 Default: 1250
+        -- Min: 1 Max: 100000 Default: 1250
         CowardlyZombiesKilledToRemoveMin = 1250,
-        -- Should be higher than Min. Min: 1 Max: 100000 Default: 2500
+        -- Min: 1 Max: 100000 Default: 2500
         CowardlyZombiesKilledToRemoveMax = 2500,
         BraveEarnable = true,
-        -- Should be lower than Max. 1 day = 24
-        -- x1.2 when starting with Cowardly trait. Min: 1 Max: 100000 Default: 504
+        -- Min: 1 Max: 100000 Default: 504
         BraveHoursToEarnMin = 504,
-        -- Should be higher than Min. 1 day = 24
-        -- x1.2 when starting with Cowardly trait. Min: 1 Max: 100000 Default: 840
+        -- Min: 1 Max: 100000 Default: 840
         BraveHoursToEarnMax = 840,
-        -- Should be lower than Max.
-        -- x1.2 when starting with Cowardly trait. Min: 1 Max: 100000 Default: 3000
+        -- Min: 1 Max: 100000 Default: 3000
         BraveZombiesKilledToEarnMin = 3000,
-        -- Should be higher than Min.
-        -- x1.2 when starting with Cowardly trait. Min: 1 Max: 100000 Default: 4500
+        -- Min: 1 Max: 100000 Default: 4500
         BraveZombiesKilledToEarnMax = 4500,
         DesensitizedEarnable = true,
-        -- Should be lower than Max. 1 day = 24
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Min: 1 Max: 100000 Default: 1176
+        -- Min: 1 Max: 100000 Default: 1176
         DesensitizedHoursToEarnMin = 1176,
-        -- Should be higher than Min. 1 day = 24
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Min: 1 Max: 100000 Default: 1512
+        -- Min: 1 Max: 100000 Default: 1512
         DesensitizedHoursToEarnMax = 1512,
-        -- Should be lower than Max.
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Min: 1 Max: 100000 Default: 6000
+        -- Min: 1 Max: 100000 Default: 6000
         DesensitizedZombiesKilledToEarnMin = 6000,
-        -- Should be higher than Min.
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Min: 1 Max: 100000 Default: 9000
+        -- Min: 1 Max: 100000 Default: 9000
         DesensitizedZombiesKilledToEarnMax = 9000,
         PacifistRemovable = true,
-        -- Should be lower than Max. 1 day = 24 Min: 1 Max: 100000 Default: 672
+        -- Min: 1 Max: 100000 Default: 672
         PacifistHoursToRemoveMin = 672,
-        -- Should be higher than Min. 1 day = 24 Min: 1 Max: 100000 Default: 1008
+        -- Min: 1 Max: 100000 Default: 1008
         PacifistHoursToRemoveMax = 1008,
-        -- Should be lower than Max. Min: 1 Max: 100000 Default: 1500
+        -- Min: 1 Max: 100000 Default: 1500
         PacifistZombiesKilledToRemoveMin = 1500,
-        -- Should be higher than Min. Min: 1 Max: 100000 Default: 2500
+        -- Min: 1 Max: 100000 Default: 2500
         PacifistZombiesKilledToRemoveMax = 2500,
-        -- Any weapon skill but Maintenance and Reloading. Min: 0 Max: 10 Default: 7
+        -- Min: 0 Max: 10 Default: 7
         PacifistSkillLvlToRemove = 7,
         SmokerRemovable = true,
-        -- Should be lower than Max. 1 day = 24 Min: 1 Max: 100000 Default: 672
+        -- Min: 1 Max: 100000 Default: 672
         SmokerHoursToRemoveMin = 672,
-        -- Should be higher than Min. 1 day = 24 Min: 1 Max: 100000 Default: 768
+        -- Min: 1 Max: 100000 Default: 768
         SmokerHoursToRemoveMax = 768,
         AlcoholicRemovable = true,
-        -- Should be lower than Max. 1 day = 24 Min: 1 Max: 100000 Default: 1032
+        -- Min: 1 Max: 100000 Default: 1032
         AlcoholicHoursToRemoveMin = 1032,
-        -- Should be higher than Min. 1 day = 24 Min: 1 Max: 100000 Default: 1128
+        -- Min: 1 Max: 100000 Default: 1128
         AlcoholicHoursToRemoveMax = 1128,
         SundayDriverRemovable = true,
-        -- Should be lower than Max. 1 day = 24 Min: 1 Max: 100000 Default: 60
+        -- Min: 1 Max: 100000 Default: 60
         SundayDriverHoursToRemoveMin = 60,
-        -- Should be higher than Min. 1 day = 24 Min: 1 Max: 100000 Default: 80
+        -- Min: 1 Max: 100000 Default: 80
         SundayDriverHoursToRemoveMax = 80,
         AllThumbsRemovable = true,
-        -- (transferring time) Min: 1 Max: 100000 Default: 37500
+        -- Min: 1 Max: 100000 Default: 37500
         AllThumbsValueToRemove = 37500,
         DisorganizedRemovable = true,
-        -- (transferring weight) Min: 1 Max: 100000 Default: 37500
+        -- Min: 1 Max: 100000 Default: 37500
         DisorganizedValueToRemove = 37500,
         GracefulEarnable = true,
         ClumsyRemovable = true,
@@ -1335,9 +1143,9 @@ SandboxVars = {
         ConspicuousRemovable = true,
     },
     OreForaging = {
-        -- Chance to find Iron Ore when foraging (1 in X attempts). Default: 1/4000. Lower values = more common. Min: 1 Max: 10000 Default: 4000
+        -- Min: 1 Max: 10000 Default: 4000
         IronOreChance = 4000,
-        -- Chance to find Copper Ore when foraging (1 in X attempts). Default: 1/4000. Lower values = more common. Min: 1 Max: 10000 Default: 4000
+        -- Min: 1 Max: 10000 Default: 4000
         CopperOreChance = 4000,
     },
 }
