@@ -42,6 +42,6 @@ im "t" ingame chat des clients (shift+t öffnet das fenster wieder):
 
 File Locations
 --------------
-Server Logs: %USERPROFILE%\Zomboid\console.txt
+Clinet Logs: %USERPROFILE%\Zomboid\console.txt
+Server Logs: %USERPROFILE%\Zomboid\Logs\<DATE>_DebugLog-server.txt
 Server Save Files: %USERPROFILE%\Zomboid\Saves\Multiplayer\
-

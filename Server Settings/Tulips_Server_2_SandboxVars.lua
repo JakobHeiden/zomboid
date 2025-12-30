@@ -1076,10 +1076,6 @@ SandboxVars = {
         AllowWreckyMcChevySpawns = true,
         AllowManlyMANSpawns = true,
         AllowGreatScottSpawns = false,
-        AllowMrBusSpawns = true,
-        AllowChonkerSpawns = true,
-        AllowCashcowSpawns = true,
-        AllowMcBoxySpawns = true,
         AllowBushmasterSpawns = true,
     },
     CF8KSweeper = {
@@ -1100,15 +1096,6 @@ SandboxVars = {
     MinidoracatFix = {
         FoodNoRot = false,
         FoodContainerDebug = false,
-    },
-    RVAddon = {
-        CustomNormalVehicles = "",
-        CustomBusVehicles = "",
-        CustomSmallVehicles = "",
-        Custom3x2Caravan = "",
-        Custom3x6Caravan = "",
-        Custom3x7Empty = "",
-        Custom4x12colossal = "",
     },
     SOTO = {
         AddFitXPWhileRun = true,
