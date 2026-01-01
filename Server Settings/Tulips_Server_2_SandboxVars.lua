@@ -164,11 +164,11 @@ SandboxVars = {
     -- Spiffo items, plushies, and other collectible keepsake items eg. Photos. Min: 0.00 Max: 4.00 Default: 0.60
     MementoLootNew = 0.4,
     -- Items that are used in cooking, including those (eg. knives) which can be weapons. Does not include food. Includes both usable and unusable items. Min: 0.00 Max: 4.00 Default: 0.60
-    CookwareLootNew = 0.05,
+    CookwareLootNew = 0.1,
     -- Items and weapons that are used as ingredients for crafting or building. This is a general category that does not include items belonging to other categories such as Cookware or Medical. Does not include Tools. Min: 0.00 Max: 4.00 Default: 0.60
     MaterialLootNew = 0.1,
     -- Items and weapons which are used in both animal and plant agriculture, such as Seeds, Trowels, or Shovels. Min: 0.00 Max: 4.00 Default: 0.60
-    FarmingLootNew = 0.05,
+    FarmingLootNew = 0.1,
     -- Items and weapons which are Tools but don't fit in other categories such as Mechanics or Farming. Min: 0.00 Max: 4.00 Default: 0.60
     ToolLootNew = 0.05,
     -- <BHC> [!] It is recommended that you DO NOT change this. [!] <RGB:1,1,1>   Can be used to adjust the number of rolls made on loot tables when spawning loot. Will not reduce the number of rolls below 1. Can negatively affect performance if set to high values. It is highly recommended that this not be changed. Min: 0.10 Max: 100.00 Default: 1.00
@@ -902,9 +902,9 @@ SandboxVars = {
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0.00 Max: 4.00 Default: 0.65
-        PopulationMultiplier = 2.0,
+        PopulationMultiplier = 2.5,
         -- A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0.00 Max: 4.00 Default: 1.00
-        PopulationStartMultiplier = 1.0,
+        PopulationStartMultiplier = 1.25,
         -- A multiplier for the desired zombie population on the peak day. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0.00 Max: 4.00 Default: 1.50
         PopulationPeakMultiplier = 2.0,
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
@@ -912,9 +912,9 @@ SandboxVars = {
         -- The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0.00 Max: 8760.00 Default: 72.00
         RespawnHours = 72.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0.00 Max: 8760.00 Default: 16.00
-        RespawnUnseenHours = 24.0,
+        RespawnUnseenHours = 36.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0.00 Max: 1.00 Default: 0.10
-        RespawnMultiplier = 0.1,
+        RespawnMultiplier = 0.15,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0.00 Max: 8760.00 Default: 12.00
         RedistributeHours = 12.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
@@ -922,13 +922,13 @@ SandboxVars = {
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
         RallyGroupSize = 20,
         -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
-        RallyGroupSizeVariance = 75,
+        RallyGroupSizeVariance = 80,
         -- The distance real zombies travel to form groups when idle. Min: 5 Max: 50 Default: 20
         RallyTravelDistance = 20,
         -- The distance between zombie groups. Min: 5 Max: 25 Default: 15
         RallyGroupSeparation = 20,
         -- How close members of a zombie group stay to the group's "leader". Min: 1 Max: 10 Default: 3
-        RallyGroupRadius = 3,
+        RallyGroupRadius = 4,
         -- Min: 10 Max: 500 Default: 300
         ZombiesCountBeforeDelete = 500,
     },
@@ -1167,5 +1167,11 @@ SandboxVars = {
         ClumsyRemovable = true,
         InconspicuousEarnable = true,
         ConspicuousRemovable = true,
+    },
+    OreForaging = {
+        -- Min: 1 Max: 10000 Default: 4000
+        IronOreChance = 4000,
+        -- Min: 1 Max: 10000 Default: 4000
+        CopperOreChance = 4000,
     },
 }

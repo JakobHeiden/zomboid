@@ -38,6 +38,7 @@ Debugmode aktivieren: steam launch option:
 
 im "t" ingame chat des clients (shift+t öffnet das fenster wieder):
 /setaccesslevel "SPIELERNAME" admin
+/setaccesslevel "SPIELERNAME" user
 /godmode
 
 File Locations

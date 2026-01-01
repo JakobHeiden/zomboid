@@ -128,7 +128,7 @@ SandboxVars = {
     -- 6 = 0-5 Years
     AlarmDecay = 2,
     -- How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Min: -1 Max: 2147483647 Default: 14
-    WaterShutModifier = 14,
+    WaterShutModifier = 18,
     -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Min: -1 Max: 2147483647 Default: 14
     ElecShutModifier = 14,
     -- How long alarm batteries can last for after the power shuts off. Min: -1 Max: 2147483647 Default: 14
@@ -138,23 +138,23 @@ SandboxVars = {
     -- All items that can be read, includes fliers Min: 0.00 Max: 4.00 Default: 0.60
     LiteratureLootNew = 0.05,
     -- Medicine, bandages and first aid tools. Min: 0.00 Max: 4.00 Default: 0.60
-    MedicalLootNew = 0.05,
+    MedicalLootNew = 0.1,
     -- Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Default: 0.60
-    SurvivalGearsLootNew = 0.1,
+    SurvivalGearsLootNew = 0.2,
     -- Canned and dried food, beverages. Min: 0.00 Max: 4.00 Default: 0.60
-    CannedFoodLootNew = 0.15,
+    CannedFoodLootNew = 0.1,
     -- Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Default: 0.60
-    WeaponLootNew = 0.1,
+    WeaponLootNew = 0.2,
     -- Also includes weapon attachments. Min: 0.00 Max: 4.00 Default: 0.60
-    RangedWeaponLootNew = 0.1,
+    RangedWeaponLootNew = 0.2,
     -- Loose ammo, boxes and magazines. Min: 0.00 Max: 4.00 Default: 0.60
-    AmmoLootNew = 0.15,
+    AmmoLootNew = 0.4,
     -- Vehicle parts and the tools needed to install them. Min: 0.00 Max: 4.00 Default: 0.60
-    MechanicsLootNew = 0.1,
+    MechanicsLootNew = 0.2,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0.00 Max: 4.00 Default: 0.60
     OtherLootNew = 0.1,
     -- All wearable items that are not containers. Min: 0.00 Max: 4.00 Default: 0.60
-    ClothingLootNew = 0.2,
+    ClothingLootNew = 0.3,
     -- Backpacks and other wearable/equippable containers, eg. cases. Min: 0.00 Max: 4.00 Default: 0.60
     ContainerLootNew = 0.05,
     -- Keys for buildings/cars, key rings, and locks. Min: 0.00 Max: 4.00 Default: 0.60
@@ -162,13 +162,13 @@ SandboxVars = {
     -- VHS tapes and CDs. Min: 0.00 Max: 4.00 Default: 0.60
     MediaLootNew = 0.05,
     -- Spiffo items, plushies, and other collectible keepsake items eg. Photos. Min: 0.00 Max: 4.00 Default: 0.60
-    MementoLootNew = 0.2,
+    MementoLootNew = 0.4,
     -- Items that are used in cooking, including those (eg. knives) which can be weapons. Does not include food. Includes both usable and unusable items. Min: 0.00 Max: 4.00 Default: 0.60
-    CookwareLootNew = 0.05,
+    CookwareLootNew = 0.1,
     -- Items and weapons that are used as ingredients for crafting or building. This is a general category that does not include items belonging to other categories such as Cookware or Medical. Does not include Tools. Min: 0.00 Max: 4.00 Default: 0.60
     MaterialLootNew = 0.1,
     -- Items and weapons which are used in both animal and plant agriculture, such as Seeds, Trowels, or Shovels. Min: 0.00 Max: 4.00 Default: 0.60
-    FarmingLootNew = 0.05,
+    FarmingLootNew = 0.1,
     -- Items and weapons which are Tools but don't fit in other categories such as Mechanics or Farming. Min: 0.00 Max: 4.00 Default: 0.60
     ToolLootNew = 0.05,
     -- <BHC> [!] It is recommended that you DO NOT change this. [!] <RGB:1,1,1>   Can be used to adjust the number of rolls made on loot tables when spawning loot. Will not reduce the number of rolls below 1. Can negatively affect performance if set to high values. It is highly recommended that this not be changed. Min: 0.10 Max: 100.00 Default: 1.00
@@ -285,7 +285,7 @@ SandboxVars = {
     -- When greater than 0, loot will not respawn in zones that have been visited within this number of in-game hours. Min: 0 Max: 2147483647 Default: 0
     SeenHoursPreventLootRespawn = 240,
     -- When greater than 0, after X hours, all containers in towns and trailer parks in the world will respawn loot. To spawn loot a container must have been looted at least once. Loot respawn is not impacted by visibility or subsequent looting. Min: 0 Max: 2147483647 Default: 0
-    HoursForLootRespawn = 0,
+    HoursForLootRespawn = 750,
     -- Containers with a number of items greater, or equal to, this setting will not respawn. Min: 0 Max: 2147483647 Default: 5
     MaxItemsForLootRespawn = 5,
     -- Items will not respawn in buildings that players have barricaded or built in.
@@ -375,7 +375,7 @@ SandboxVars = {
     -- 3 = Normal
     -- 4 = High
     -- 5 = Very High
-    ConstructionBonusPoints = 3,
+    ConstructionBonusPoints = 4,
     -- The level of ambient lighting at night. Default = Normal
     -- 1 = Pitch Black
     -- 2 = Dark
@@ -764,7 +764,7 @@ SandboxVars = {
         -- 5 = Often
         -- 6 = Very Often
         -- 7 = Always
-        SpawnFrequency = 4,
+        SpawnFrequency = 5,
     },
     Map = {
         -- If enabled, a mini-map window will be available.
@@ -796,7 +796,7 @@ SandboxVars = {
         -- 2 = Normal
         -- 3 = Fragile
         -- 4 = Random
-        Toughness = 2,
+        Toughness = 4,
         -- How the Knox Virus spreads. Default = Blood and Saliva
         -- 1 = Blood and Saliva
         -- 2 = Saliva Only
@@ -912,7 +912,7 @@ SandboxVars = {
         -- The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0.00 Max: 8760.00 Default: 72.00
         RespawnHours = 72.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0.00 Max: 8760.00 Default: 16.00
-        RespawnUnseenHours = 24.0,
+        RespawnUnseenHours = 36.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0.00 Max: 1.00 Default: 0.10
         RespawnMultiplier = 0.15,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0.00 Max: 8760.00 Default: 12.00
@@ -922,13 +922,13 @@ SandboxVars = {
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
         RallyGroupSize = 20,
         -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
-        RallyGroupSizeVariance = 50,
+        RallyGroupSizeVariance = 80,
         -- The distance real zombies travel to form groups when idle. Min: 5 Max: 50 Default: 20
         RallyTravelDistance = 20,
         -- The distance between zombie groups. Min: 5 Max: 25 Default: 15
-        RallyGroupSeparation = 15,
+        RallyGroupSeparation = 20,
         -- How close members of a zombie group stay to the group's "leader". Min: 1 Max: 10 Default: 3
-        RallyGroupRadius = 3,
+        RallyGroupRadius = 4,
         -- Min: 10 Max: 500 Default: 300
         ZombiesCountBeforeDelete = 500,
     },
@@ -1070,6 +1070,32 @@ SandboxVars = {
         SpawnRifleSuppressors = true,
         SpawnShotgunSuppressors = true,
         SpawnRevolverSuppressors = true,
+    },
+    DAMN = {
+        AllowPowerChadSpawns = true,
+        AllowWreckyMcChevySpawns = true,
+        AllowManlyMANSpawns = true,
+        AllowGreatScottSpawns = false,
+        AllowBushmasterSpawns = true,
+    },
+    CF8KSweeper = {
+        AllowTiles = true,
+        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
+        AllowBlood = true,
+        AllowGrime = true,
+        AllowAshes = true,
+        AllowItems = true,
+        AllowCorpses = true,
+    },
+    OreForaging = {
+        -- Min: 1 Max: 10000 Default: 4000
+        IronOreChance = 4000,
+        -- Min: 1 Max: 10000 Default: 4000
+        CopperOreChance = 4000,
+    },
+    MinidoracatFix = {
+        FoodNoRot = false,
+        FoodContainerDebug = false,
     },
     SOTO = {
         AddFitXPWhileRun = true,
