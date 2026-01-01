@@ -755,6 +755,8 @@ SandboxVars = {
     GeneratorTileRange = 20,
     -- How many levels both above and below a generator it can provide with electricity. Min: 1 Max: 15 Default: 3
     GeneratorVerticalPowerRange = 3,
+    VRO_EnableEngineRebuild = false,
+    VRO_UseVanillaFixingRecipes = false,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
         -- 1 = Never
@@ -1167,11 +1169,5 @@ SandboxVars = {
         ClumsyRemovable = true,
         InconspicuousEarnable = true,
         ConspicuousRemovable = true,
-    },
-    OreForaging = {
-        -- Min: 1 Max: 10000 Default: 4000
-        IronOreChance = 4000,
-        -- Min: 1 Max: 10000 Default: 4000
-        CopperOreChance = 4000,
     },
 }
