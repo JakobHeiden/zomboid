@@ -912,11 +912,11 @@ SandboxVars = {
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
         PopulationPeakDay = 28,
         -- The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0.00 Max: 8760.00 Default: 72.00
-        RespawnHours = 72.0,
+        RespawnHours = 24.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0.00 Max: 8760.00 Default: 16.00
-        RespawnUnseenHours = 36.0,
+        RespawnUnseenHours = 168.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0.00 Max: 1.00 Default: 0.10
-        RespawnMultiplier = 0.1,
+        RespawnMultiplier = 0.05,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0.00 Max: 8760.00 Default: 12.00
         RedistributeHours = 12.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
@@ -1009,6 +1009,9 @@ SandboxVars = {
         Butchering = 1.0,
         -- Rate at which Glassmaking skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00
         Glassmaking = 1.0,
+    },
+    ProxInv = {
+        ZombieOnly = false,
     },
     DAMN = {
         AllowVanillaVehicleDismantling = true,

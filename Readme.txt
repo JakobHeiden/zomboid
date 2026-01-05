@@ -46,3 +46,4 @@ File Locations
 Clinet Logs: %USERPROFILE%\Zomboid\console.txt
 Server Logs: %USERPROFILE%\Zomboid\Logs\<DATE>_DebugLog-server.txt
 Server Save Files: %USERPROFILE%\Zomboid\Saves\Multiplayer\
+Folder für lokale Mods (Server und alle Clients, kein auto download).: %USERPROFILE%\Zomboid\mods
