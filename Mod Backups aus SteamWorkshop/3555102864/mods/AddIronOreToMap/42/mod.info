@@ -1,0 +1,7 @@
+name=Add Iron Ore to Map
+id=AddIronOreToMap
+description=Adds the new iron ore mineral deposits to the flint world gen table. 
+poster=poster.png
+icon=icon.png
+
+
