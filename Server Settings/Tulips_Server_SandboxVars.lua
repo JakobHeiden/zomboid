@@ -285,7 +285,7 @@ SandboxVars = {
     -- When greater than 0, loot will not respawn in zones that have been visited within this number of in-game hours. Min: 0 Max: 2147483647 Default: 0
     SeenHoursPreventLootRespawn = 240,
     -- When greater than 0, after X hours, all containers in towns and trailer parks in the world will respawn loot. To spawn loot a container must have been looted at least once. Loot respawn is not impacted by visibility or subsequent looting. Min: 0 Max: 2147483647 Default: 0
-    HoursForLootRespawn = 750,
+    HoursForLootRespawn = 0,
     -- Containers with a number of items greater, or equal to, this setting will not respawn. Min: 0 Max: 2147483647 Default: 5
     MaxItemsForLootRespawn = 5,
     -- Items will not respawn in buildings that players have barricaded or built in.
@@ -755,7 +755,7 @@ SandboxVars = {
     GeneratorTileRange = 20,
     -- How many levels both above and below a generator it can provide with electricity. Min: 1 Max: 15 Default: 3
     GeneratorVerticalPowerRange = 3,
-    VRO_EnableEngineRebuild = true,
+    VRO_EnableEngineRebuild = false,
     VRO_UseVanillaFixingRecipes = false,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
@@ -918,7 +918,7 @@ SandboxVars = {
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0.00 Max: 1.00 Default: 0.10
         RespawnMultiplier = 0.05,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0.00 Max: 8760.00 Default: 12.00
-        RedistributeHours = 12.0,
+        RedistributeHours = 24.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
@@ -1010,17 +1010,25 @@ SandboxVars = {
         -- Rate at which Glassmaking skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00
         Glassmaking = 1.0,
     },
-    ProxInv = {
-        ZombieOnly = false,
-    },
     DAMN = {
-        AllowVanillaVehicleDismantling = true,
-        AllowVanillaWorldItemDismantling = true,
         AllowPowerChadSpawns = true,
         AllowWreckyMcChevySpawns = true,
         AllowManlyMANSpawns = true,
         AllowGreatScottSpawns = true,
         AllowBushmasterSpawns = true,
+        AllowMrBusSpawns = true,
+        AllowChonkerSpawns = true,
+        AllowCashcowSpawns = true,
+        AllowMcBoxySpawns = true,
+    },
+    CF8KSweeper = {
+        AllowTiles = true,
+        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
+        AllowBlood = true,
+        AllowGrime = true,
+        AllowAshes = true,
+        AllowItems = true,
+        AllowCorpses = true,
     },
     Firearms = {
         ImprovisedSuppressors = true,
@@ -1047,7 +1055,7 @@ SandboxVars = {
         -- 6 = Common
         -- 7 = Abundant
         LootSuppressor = 2,
-        SpawnAK47 = true,
+        SpawnAK47 = false,
         SpawnAKM = true,
         SpawnAR15 = true,
         SpawnColtPeacemaker = true,
@@ -1060,7 +1068,7 @@ SandboxVars = {
         SpawnFNFal = true,
         SpawnG3 = true,
         SpawnGlock17 = true,
-        SpawnICA19 = true,
+        SpawnICA19 = false,
         SpawnM16A2 = true,
         SpawnM1Garand = true,
         SpawnM24 = true,
@@ -1082,17 +1090,20 @@ SandboxVars = {
         SpawnSuppressors = true,
         SpawnHandgunSuppressors = true,
         SpawnRifleSuppressors = true,
-        SpawnShotgunSuppressors = true,
-        SpawnRevolverSuppressors = true,
+        SpawnShotgunSuppressors = false,
+        SpawnRevolverSuppressors = false,
     },
-    CF8KSweeper = {
-        AllowTiles = true,
-        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
-        AllowBlood = true,
-        AllowGrime = true,
-        AllowAshes = true,
-        AllowItems = true,
-        AllowCorpses = true,
+    KnowYourCalories = {
+        UseProgressBar = true,
+        ProgressBarDescription = true,
+        Rounding = 2,
+        NeedNutritionist = true,
+        -- Min: 0 Max: 11 Default: 5
+        NeedCookingLevelForCalories = 5,
+        -- Min: 0 Max: 11 Default: 6
+        NeedCookingLevelForProteins = 6,
+        -- Min: 0 Max: 11 Default: 7
+        NeedCookingLevelForOthers = 7,
     },
     OreForaging = {
         -- Min: 1 Max: 10000 Default: 4000
@@ -1100,16 +1111,12 @@ SandboxVars = {
         -- Min: 1 Max: 10000 Default: 4000
         CopperOreChance = 4000,
     },
-    MinidoracatFix = {
-        FoodNoRot = false,
-        FoodContainerDebug = false,
-    },
     SOTO = {
         AddFitXPWhileRun = true,
         AgilityTraitsObtainable = true,
         CombatTraitsObtainable = true,
-        SurvTraitsObtainable = true,
-        CraftTraitsObtainable = true,
+        SurvTraitsObtainable = false,
+        CraftTraitsObtainable = false,
         FirearmTraitsObtainable = true,
         CowardlyRemovable = true,
         -- Min: 1 Max: 100000 Default: 168
@@ -1174,5 +1181,54 @@ SandboxVars = {
         ClumsyRemovable = true,
         InconspicuousEarnable = true,
         ConspicuousRemovable = true,
+    },
+    VVR = {
+        NoTrailers = false,
+        Professional = true,
+        -- Min: 0 Max: 100 Default: 10
+        VehiCond = 10,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntTJ = 0,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntJY = 0,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntTP = 0,
+        VehiclesBlacklist = "Base.ModernCar_Martin;",
+    },
+    UsefulBarrels = {
+        DebugMode = false,
+        -- Min: 1 Max: 9999 Default: 400
+        BarrelCapacity = 400,
+        RequirePipeWrench = true,
+        RequireHoseForTake = true,
+        RequireFunnelForFill = false,
+        -- Min: 1.00 Max: 2.00 Default: 1.25
+        FunnelSpeedUpFillModifier = 1.25,
+        AllowIndustrial = true,
+        AllowFuel = true,
+        AllowHazardous = true,
+        AllowWater = true,
+        AllowAlcoholic = false,
+        AllowBeverage = false,
+        AllowMedical = false,
+        AllowColors = false,
+        AllowDyes = false,
+        AllowHairDyes = false,
+        AllowPaint = false,
+        AllowPoisons = false,
+        EnableGeneratorRefuel = true,
+        GeneratorRefuelRequiresHose = true,
+        EnableCarRefuel = true,
+        CarRefuelRequiresHose = true,
+        EnableFillBarrelFromVehicles = true,
+        FillBarrelFromVehiclesRequiresHose = true,
+        InitialFluid = true,
+        InitialFluidPool = "Acid Water TaintedWater Petrol Petrol Bleach PotentPoison",
+        -- Min: 0 Max: 9999 Default: 54
+        InitialFluidMaxAmount = 54,
+        -- Min: 0.00 Max: 100.00 Default: 25.00
+        InitialFluidSpawnChance = 25.0,
+        RequireWeldingMask = true,
+        RequireBlowTorch = true,
     },
 }
