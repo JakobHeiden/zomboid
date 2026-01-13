@@ -397,7 +397,7 @@ SandboxVars = {
     -- 3 = High
     InjurySeverity = 2,
     -- How long, in hours, before dead zombie bodies disappear from the world.  If 0, maggots will not spawn on corpses. Min: -1.00 Max: 2147483647.00 Default: 216.00
-    HoursForCorpseRemoval = 216.0,
+    HoursForCorpseRemoval = 132.0,
     -- The impact that nearby decaying bodies has on the player's health and emotions. Default = Normal
     -- 1 = None
     -- 2 = Low
@@ -1010,25 +1010,8 @@ SandboxVars = {
         -- Rate at which Glassmaking skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00
         Glassmaking = 1.0,
     },
-    DAMN = {
-        AllowPowerChadSpawns = true,
-        AllowWreckyMcChevySpawns = true,
-        AllowManlyMANSpawns = true,
-        AllowGreatScottSpawns = true,
-        AllowBushmasterSpawns = true,
-        AllowMrBusSpawns = true,
-        AllowChonkerSpawns = true,
-        AllowCashcowSpawns = true,
-        AllowMcBoxySpawns = true,
-    },
-    CF8KSweeper = {
-        AllowTiles = true,
-        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
-        AllowBlood = true,
-        AllowGrime = true,
-        AllowAshes = true,
-        AllowItems = true,
-        AllowCorpses = true,
+    ProxInv = {
+        ZombieOnly = false,
     },
     Firearms = {
         ImprovisedSuppressors = true,
@@ -1093,23 +1076,35 @@ SandboxVars = {
         SpawnShotgunSuppressors = false,
         SpawnRevolverSuppressors = false,
     },
-    KnowYourCalories = {
-        UseProgressBar = true,
-        ProgressBarDescription = true,
-        Rounding = 2,
-        NeedNutritionist = true,
-        -- Min: 0 Max: 11 Default: 5
-        NeedCookingLevelForCalories = 5,
-        -- Min: 0 Max: 11 Default: 6
-        NeedCookingLevelForProteins = 6,
-        -- Min: 0 Max: 11 Default: 7
-        NeedCookingLevelForOthers = 7,
+    DAMN = {
+        AllowPowerChadSpawns = true,
+        AllowWreckyMcChevySpawns = true,
+        AllowManlyMANSpawns = true,
+        AllowGreatScottSpawns = true,
+        AllowBushmasterSpawns = true,
+        AllowMrBusSpawns = true,
+        AllowChonkerSpawns = true,
+        AllowCashcowSpawns = true,
+        AllowMcBoxySpawns = true,
+    },
+    CF8KSweeper = {
+        AllowTiles = true,
+        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
+        AllowBlood = true,
+        AllowGrime = true,
+        AllowAshes = true,
+        AllowItems = true,
+        AllowCorpses = true,
     },
     OreForaging = {
         -- Min: 1 Max: 10000 Default: 4000
         IronOreChance = 4000,
         -- Min: 1 Max: 10000 Default: 4000
         CopperOreChance = 4000,
+    },
+    MinidoracatFix = {
+        FoodNoRot = false,
+        FoodContainerDebug = false,
     },
     SOTO = {
         AddFitXPWhileRun = true,
@@ -1182,19 +1177,6 @@ SandboxVars = {
         InconspicuousEarnable = true,
         ConspicuousRemovable = true,
     },
-    VVR = {
-        NoTrailers = false,
-        Professional = true,
-        -- Min: 0 Max: 100 Default: 10
-        VehiCond = 10,
-        -- Min: 0 Max: 100 Default: 0
-        NoBurntTJ = 0,
-        -- Min: 0 Max: 100 Default: 0
-        NoBurntJY = 0,
-        -- Min: 0 Max: 100 Default: 0
-        NoBurntTP = 0,
-        VehiclesBlacklist = "Base.ModernCar_Martin;",
-    },
     UsefulBarrels = {
         DebugMode = false,
         -- Min: 1 Max: 9999 Default: 400
@@ -1230,5 +1212,30 @@ SandboxVars = {
         InitialFluidSpawnChance = 25.0,
         RequireWeldingMask = true,
         RequireBlowTorch = true,
+    },
+    KnowYourCalories = {
+        UseProgressBar = true,
+        ProgressBarDescription = true,
+        Rounding = 2,
+        NeedNutritionist = true,
+        -- Min: 0 Max: 11 Default: 5
+        NeedCookingLevelForCalories = 5,
+        -- Min: 0 Max: 11 Default: 6
+        NeedCookingLevelForProteins = 6,
+        -- Min: 0 Max: 11 Default: 7
+        NeedCookingLevelForOthers = 7,
+    },
+    VVR = {
+        NoTrailers = false,
+        Professional = true,
+        -- Min: 0 Max: 100 Default: 10
+        VehiCond = 10,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntTJ = 0,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntJY = 0,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntTP = 0,
+        VehiclesBlacklist = "Base.ModernCar_Martin;",
     },
 }
