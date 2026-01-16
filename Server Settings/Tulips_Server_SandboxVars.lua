@@ -1219,11 +1219,11 @@ SandboxVars = {
         Rounding = 2,
         NeedNutritionist = true,
         -- Min: 0 Max: 11 Default: 5
-        NeedCookingLevelForCalories = 5,
+        NeedCookingLevelForCalories = 2,
         -- Min: 0 Max: 11 Default: 6
-        NeedCookingLevelForProteins = 6,
+        NeedCookingLevelForProteins = 3,
         -- Min: 0 Max: 11 Default: 7
-        NeedCookingLevelForOthers = 7,
+        NeedCookingLevelForOthers = 4,
     },
     VVR = {
         NoTrailers = false,
@@ -1237,5 +1237,30 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 0
         NoBurntTP = 0,
         VehiclesBlacklist = "Base.ModernCar_Martin;",
+    },
+    ProjectBeefcake = {
+        BeefRebalance = true,
+        VegiRebalance = true,
+        FishingRebalance = true,
+        AnimalRebalance = true,
+        ButcherChanges = true,
+        CookingChanges = true,
+        BoredomSystem = true,
+        -- Min: 0.00 Max: 50.00 Default: 20.00
+        Threshold = 20.0,
+        -- Min: 0.00 Max: 50.00 Default: 20.00
+        ThresholdFluid = 20.0,
+        -- Min: 0.00 Max: 100.00 Default: 20.00
+        DecayFactor = 20.0,
+        -- Min: 0.00 Max: 100.00 Default: 20.00
+        DecayFactorFluid = 20.0,
+        -- Min: 0.00 Max: 50.00 Default: 4.00
+        BoredomFactor = 4.0,
+        -- Min: 0.00 Max: 50.00 Default: 20.00
+        BoredomFactorFluid = 20.0,
+        -- Min: 0.00 Max: 100.00 Default: 30.00
+        CommentChance = 30.0,
+        -- Min: 0.00 Max: 100.00 Default: 50.00
+        ComplaintChance = 50.0,
     },
 }

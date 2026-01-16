@@ -1,0 +1,23 @@
+Server Adresse:
+IP: 87.156.146.241
+ODER (alternativ und besser, weil es sich nie ändert)
+FQDN statt IP : madtulip.duckdns.org
+Passwort: knacki
+Spawn: Ekron
+
+------------
+Lokale Mods:
+Den inhalt der lokale mods.zip bitte in %USERPROFILE%\Zomboid\mods\ entpacken.
+
+----------------
+Client Settings:
+Multiplayer -> Edit Server -> "Use Steam Relay" auf OFF (unchecked) stellen.
+Optionen > Compression OFF (unchecked).
+
+----------------------
+Meine Map ist weg fix:
+
+Schließe PZ.
+Mach ein Backup von %USERPROFILE%\Zomboid\Saves\Multiplayer\
+Dort gibts mehrere Unterordner in denen deine map gespeicehrt ist. Die Namen der Unterordner beginnen mit der Server IP. Wenn sich die Server IP ändert wird ein neuer Ordner und eine neue Map angelegt.
+Kopiere map_p.bin, map_t.bin und den Ordner chunks vom alten ordner in den neuen Ordner und überschreibe die neue map dort. Das ist nur die info von der "map" alles andere speichert der server bei sich (items auf der map, zombies usw.)
