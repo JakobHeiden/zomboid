@@ -1010,8 +1010,25 @@ SandboxVars = {
         -- Rate at which Glassmaking skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00
         Glassmaking = 1.0,
     },
-    ProxInv = {
-        ZombieOnly = false,
+    DAMN = {
+        AllowPowerChadSpawns = true,
+        AllowWreckyMcChevySpawns = true,
+        AllowManlyMANSpawns = true,
+        AllowGreatScottSpawns = false,
+        AllowMrBusSpawns = true,
+        AllowChonkerSpawns = true,
+        AllowCashcowSpawns = true,
+        AllowMcBoxySpawns = true,
+        AllowBushmasterSpawns = true,
+    },
+    CF8KSweeper = {
+        AllowTiles = true,
+        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
+        AllowBlood = true,
+        AllowGrime = true,
+        AllowAshes = true,
+        AllowItems = true,
+        AllowCorpses = true,
     },
     Firearms = {
         ImprovisedSuppressors = true,
@@ -1038,7 +1055,7 @@ SandboxVars = {
         -- 6 = Common
         -- 7 = Abundant
         LootSuppressor = 2,
-        SpawnAK47 = false,
+        SpawnAK47 = true,
         SpawnAKM = true,
         SpawnAR15 = true,
         SpawnColtPeacemaker = true,
@@ -1051,7 +1068,7 @@ SandboxVars = {
         SpawnFNFal = true,
         SpawnG3 = true,
         SpawnGlock17 = true,
-        SpawnICA19 = false,
+        SpawnICA19 = true,
         SpawnM16A2 = true,
         SpawnM1Garand = true,
         SpawnM24 = true,
@@ -1076,25 +1093,9 @@ SandboxVars = {
         SpawnShotgunSuppressors = false,
         SpawnRevolverSuppressors = false,
     },
-    DAMN = {
-        AllowPowerChadSpawns = true,
-        AllowWreckyMcChevySpawns = true,
-        AllowManlyMANSpawns = true,
-        AllowGreatScottSpawns = true,
-        AllowBushmasterSpawns = true,
-        AllowMrBusSpawns = true,
-        AllowChonkerSpawns = true,
-        AllowCashcowSpawns = true,
-        AllowMcBoxySpawns = true,
-    },
-    CF8KSweeper = {
-        AllowTiles = true,
-        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
-        AllowBlood = true,
-        AllowGrime = true,
-        AllowAshes = true,
-        AllowItems = true,
-        AllowCorpses = true,
+    MinidoracatFix = {
+        FoodNoRot = false,
+        FoodContainerDebug = false,
     },
     OreForaging = {
         -- Min: 1 Max: 10000 Default: 4000
@@ -1102,9 +1103,8 @@ SandboxVars = {
         -- Min: 1 Max: 10000 Default: 4000
         CopperOreChance = 4000,
     },
-    MinidoracatFix = {
-        FoodNoRot = false,
-        FoodContainerDebug = false,
+    ProxInv = {
+        ZombieOnly = false,
     },
     SOTO = {
         AddFitXPWhileRun = true,
@@ -1177,6 +1177,19 @@ SandboxVars = {
         InconspicuousEarnable = true,
         ConspicuousRemovable = true,
     },
+    VVR = {
+        NoTrailers = false,
+        Professional = true,
+        -- Min: 0 Max: 100 Default: 10
+        VehiCond = 10,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntTJ = 0,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntJY = 0,
+        -- Min: 0 Max: 100 Default: 0
+        NoBurntTP = 0,
+        VehiclesBlacklist = "Base.ModernCar_Martin;",
+    },
     UsefulBarrels = {
         DebugMode = false,
         -- Min: 1 Max: 9999 Default: 400
@@ -1212,55 +1225,5 @@ SandboxVars = {
         InitialFluidSpawnChance = 25.0,
         RequireWeldingMask = true,
         RequireBlowTorch = true,
-    },
-    KnowYourCalories = {
-        UseProgressBar = true,
-        ProgressBarDescription = true,
-        Rounding = 2,
-        NeedNutritionist = true,
-        -- Min: 0 Max: 11 Default: 5
-        NeedCookingLevelForCalories = 2,
-        -- Min: 0 Max: 11 Default: 6
-        NeedCookingLevelForProteins = 3,
-        -- Min: 0 Max: 11 Default: 7
-        NeedCookingLevelForOthers = 4,
-    },
-    VVR = {
-        NoTrailers = false,
-        Professional = true,
-        -- Min: 0 Max: 100 Default: 10
-        VehiCond = 10,
-        -- Min: 0 Max: 100 Default: 0
-        NoBurntTJ = 0,
-        -- Min: 0 Max: 100 Default: 0
-        NoBurntJY = 0,
-        -- Min: 0 Max: 100 Default: 0
-        NoBurntTP = 0,
-        VehiclesBlacklist = "Base.ModernCar_Martin;",
-    },
-    ProjectBeefcake = {
-        BeefRebalance = true,
-        VegiRebalance = true,
-        FishingRebalance = true,
-        AnimalRebalance = true,
-        ButcherChanges = true,
-        CookingChanges = true,
-        BoredomSystem = true,
-        -- Min: 0.00 Max: 50.00 Default: 20.00
-        Threshold = 20.0,
-        -- Min: 0.00 Max: 50.00 Default: 20.00
-        ThresholdFluid = 20.0,
-        -- Min: 0.00 Max: 100.00 Default: 20.00
-        DecayFactor = 20.0,
-        -- Min: 0.00 Max: 100.00 Default: 20.00
-        DecayFactorFluid = 20.0,
-        -- Min: 0.00 Max: 50.00 Default: 4.00
-        BoredomFactor = 4.0,
-        -- Min: 0.00 Max: 50.00 Default: 20.00
-        BoredomFactorFluid = 20.0,
-        -- Min: 0.00 Max: 100.00 Default: 30.00
-        CommentChance = 30.0,
-        -- Min: 0.00 Max: 100.00 Default: 50.00
-        ComplaintChance = 50.0,
     },
 }
