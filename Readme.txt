@@ -13,6 +13,16 @@ Tulips_Server_spawnregions.lua
 kopieren nach:
 %USERPROFILE%\Zomboid\Server\Tulips_Server_SandboxVars.lua usw.
 
+Mod der lokale files an anderer stelle benötigt
+-----------------------------------------------
+Quelle: https://steamcommunity.com/sharedfiles/filedetails/?id=3559765660
+
+Der Mod Car Physics braucht einen "zombie folder" sowohl im client als auch im dedicated server.
+lokal.zip\zombies kopieren nach
+C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid
+UND
+C:\Program Files (x86)\Steam\steamapps\common\Project Zomboid Dedicated Server
+
 Dedicated Server
 ----------------
 Portfordward 16261 UDP und 16262 UDP von gateway an server

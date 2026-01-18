@@ -6,8 +6,9 @@ Passwort: knacki
 Spawn: Ekron
 
 ------------
-Lokale Mods:
-Den inhalt der lokale mods.zip bitte in %USERPROFILE%\Zomboid\mods\ entpacken.
+Lokale Dateien:
+Den INHALT des Ordners "Mods" aus der "lokal.zip" bitte in %USERPROFILE%\Zomboid\mods\ entpacken.
+Den ganzen Ordner "zombie" aus lokale files.zip in das Project Zomboid Installationsverzeichnis entpacken (Bei Steam Rechtsklick auf PZ -> Verwalten -> Lokale Dateien durchsuchen) bzw. bei mir wäre das C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid
 
 ----------------
 Client Settings:
@@ -20,4 +21,4 @@ Meine Map ist weg fix:
 Schließe PZ.
 Mach ein Backup von %USERPROFILE%\Zomboid\Saves\Multiplayer\
 Dort gibts mehrere Unterordner in denen deine map gespeicehrt ist. Die Namen der Unterordner beginnen mit der Server IP. Wenn sich die Server IP ändert wird ein neuer Ordner und eine neue Map angelegt.
-Kopiere map_p.bin, map_t.bin und den Ordner chunks vom alten ordner in den neuen Ordner und überschreibe die neue map dort. Das ist nur die info von der "map" alles andere speichert der server bei sich (items auf der map, zombies usw.)
+Kopiere map_visited.bin vom alten ordner in den neuen Ordner und überschreibe die neue map dort. Das ist nur die info von der "map" alles andere speichert der server bei sich (items auf der map, zombies usw.)

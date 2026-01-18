@@ -759,6 +759,8 @@ SandboxVars = {
     VRO_EnableEngineRebuild = false,
     -- Use the original repair system that allows repairs to be done standing in place, doesn't use a welding mask, any sounds or animations.
     VRO_UseVanillaFixingRecipes = false,
+    -- Parts with a success chance below this value will be skipped during training. <LINE> At '-1' this setting is not enforced, any value over '-1' is enforced server-wide. <LINE>  <LINE> 0% -> All parts will be worked on. Parts will break at lower skill levels. <LINE> 30% -> Default setting for a good balance. <LINE> 100% -> Only parts that are guaranteed to succeed will be worked on. Completely safe at all skill levels. Min: -1 Max: 100 Default: -1
+    BAM_Server_MinSuccessChance = -1,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
         -- 1 = Never
@@ -1468,5 +1470,65 @@ SandboxVars = {
         InitialFluidSpawnChance = 25.0,
         RequireWeldingMask = true,
         RequireBlowTorch = true,
+    },
+    RealisticCarPhysics = {
+        -- Car engine sound overhaul. Engine starting/shutdown sounds not currently working.
+        SoundOverhaulBeta = false,
+        -- Overhauls the horsepower and weight of all vehicles to realistic values
+        HPWeightOverhaulBeta = false,
+        -- Overhauls the trunk capacity of cars and trailers to be much larger
+        TrunkOverhaulBeta = false,
+        -- Multiples the trunk capacity of cars and trailers. Only works with cargo overhaul enabled. Min: 0.01 Max: 100.00 Default: 1.00
+        TrunkMultiplier = 1.0,
+        -- Recommend trying with this turned off for more realism! You can start the car with the start engine key (N by default) or click on the engine icon
+        AutoStart = true,
+        -- If unchecked you need the key in the ignition or to hotwire a car to make it easy to tow (disengages parking brake). If checked its always easy to tow!
+        EasyTow = true,
+        -- Base torque multiplier for all Sport cars Min: 0.00 Max: 5.00 Default: 1.00
+        TorqueModifierSport = 1.0,
+        -- Base torque multiplier for all Standard cars Min: 0.00 Max: 5.00 Default: 1.00
+        TorqueModifierStandard = 1.0,
+        -- Base torque multiplier for all Heavy Duty cars Min: 0.00 Max: 5.00 Default: 1.00
+        TorqueModifierHeavyDuty = 1.0,
+        -- How much the torque converter can increase torque at very low wheel speed. 2.5 is realistic limit for 1990's torque converters. Less will reduce ability to push zombies and other cars around at low speed. Min: 1.00 Max: 4.00 Default: 2.50
+        TorqueMultiplierLimit = 2.5,
+        -- Adjust the torque of any vehicle! Include part of its name and then how much torque you wish to adjust by! Example: Step Van:0.95/Valuline:0.95
+        TorqueModifierIndivual = "Step Van:0.95/Valuline:0.95",
+        -- Adjust the top speed of any vehicle! Include part of its name and then what the new top speed should be! Example: Step Van:80/Valuline:70
+        SpeedOverride = "Step Van:80/Valuline:70",
+        -- Prevents cars from going faster than this in reverse. Cars will not reach this speed in reverse if they hit max rpm first. Min: 5.00 Max: 120.00 Default: 40.00
+        ReverseSpeedMax = 40.0,
+        -- Aerodynamic drag for sport vehicles. This increases at a rate of vehicle speed^2 Min: 0.00 Max: 10.00 Default: 0.70
+        AerodynamicDragSport = 0.7,
+        -- Aerodynamic drag for standard vehicles. This increases at a rate of vehicle speed^2 Min: 0.00 Max: 10.00 Default: 1.00
+        AerodynamicDragStandard = 1.0,
+        -- Aerodynamic drag for heavy duty vehicles. This increases at a rate of vehicle speed^2 Min: 0.00 Max: 10.00 Default: 1.50
+        AerodynamicDragHeavyDuty = 1.5,
+        -- Rolling Resistance of the vehicle while on the road. This increases with vehicle weight. Min: 0.00 Max: 10.00 Default: 0.05
+        RollingResistance = 0.05,
+        -- Addition Rolling Resistance of the vehicle while on the road at 100MPH. Reduce this to make driving offroad at high speeds easier. Min: 0.00 Max: 10.00 Default: 0.10
+        RollingResistanceSpeed = 0.1,
+        -- Rolling Resistance of the vehicle while off the road. This increases with vehicle weight and is modified by offroad efficency factor of the vehicle. Reduce this to make driving offroad at all speeds easier. Min: 0.00 Max: 10.00 Default: 0.20
+        OffroadRollingResistance = 0.2,
+        -- Addition Rolling Resistance of the vehicle while off the road at 100MPH. Reduce this to make driving offroad at high speeds easier. Min: 0.00 Max: 10.00 Default: 1.00
+        OffroadRollingResistanceSpeed = 1.0,
+        -- Experimental realtime traction modification feature. if enabled steering and braking traction will be modified in realtime based on weather, road and tire condition.
+        TractionModification = true,
+        -- Multiplier for tire traction when accelerating/steering and braking. Lower for more burnouts and slides, increase for more traction Min: 0.00 Max: 10.00 Default: 1.00
+        OverallTraction = 1.0,
+        -- Multiplier for tire traction for acceleration only. Lower for more burnouts, increase for less burnouts.  Min: 0.00 Max: 10.00 Default: 1.00
+        AccelerationTraction = 1.0,
+        -- Multiplies vehicle traction by this amount when offroad Min: 0.00 Max: 1.00 Default: 0.60
+        TractionOffroad = 0.6,
+        -- Multiplies vehicle traction by this amount when its raining. Multipled with offroad friction if offroad and raining. Min: 0.00 Max: 1.00 Default: 0.70
+        TractionRaining = 0.7,
+        -- Multiplies vehicle traction by this amount when ground is covered in snow. Vehicle uses the lesser of snow or offroad*rain traction. Min: 0.00 Max: 1.00 Default: 0.40
+        TractionSnow = 0.4,
+        -- Slows down car when running over small trees or hedges Min: 0.00 Max: 10.00 Default: 0.30
+        PlantImpulse = 0.3,
+        -- Slowdown cars experience when hitting a zombie Min: 0.00 Max: 10.00 Default: 0.50
+        ZombieImpulse = 0.5,
+        -- How much cars lift into the air when running over a dead/ragdoll zombie or animal Min: 0.00 Max: 10.00 Default: 1.00
+        CorpseImpulse = 1.0,
     },
 }
