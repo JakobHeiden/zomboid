@@ -144,9 +144,9 @@ SandboxVars = {
     -- Canned and dried food, beverages. Min: 0.00 Max: 4.00 Default: 0.60
     CannedFoodLootNew = 0.2,
     -- Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Default: 0.60
-    WeaponLootNew = 0.2,
+    WeaponLootNew = 0.4,
     -- Also includes weapon attachments. Min: 0.00 Max: 4.00 Default: 0.60
-    RangedWeaponLootNew = 0.2,
+    RangedWeaponLootNew = 0.4,
     -- Loose ammo, boxes and magazines. Min: 0.00 Max: 4.00 Default: 0.60
     AmmoLootNew = 0.4,
     -- Vehicle parts and the tools needed to install them. Min: 0.00 Max: 4.00 Default: 0.60
@@ -480,7 +480,7 @@ SandboxVars = {
     -- 3 = Low
     -- 4 = Normal
     -- 5 = High
-    CarSpawnRate = 3,
+    CarSpawnRate = 2,
     -- General engine loudness to zombies. Min: 0.00 Max: 100.00 Default: 1.00
     ZombieAttractionMultiplier = 1.0,
     -- Whether found vehicles are locked, need keys to start etc.
