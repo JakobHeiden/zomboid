@@ -1,0 +1,39 @@
+module Base
+{
+    /* Recipe 1: Rotten Food to Compost Bag */
+    recipe Craft Compost Bag from Rotten Food
+    {
+       RottenFood=10,
+       EmptySack,
+       
+       Result:CompostBag,
+       Time:100.0,
+       Category:Farming,
+       OnCanPerform:Recipe.OnCanPerform.SourceCanBeRotten,
+       Tool:Shovel,
+    }
+
+    /* Recipe 2: GrasCut to Compost Bag */
+    recipe Craft Compost Bag from Grass
+    {
+       GrassCuttings=20,
+       EmptySack,
+       
+       Result:CompostBag,
+       Time:100.0,
+       Category:Farming,
+       Tool:Shovel,
+    }
+
+    /* Recipe 2: GrasCut to Compost Bag */
+    recipe Craft Compost Bag from Dung
+    {
+       Dung=5,
+       EmptySack,
+       
+       Result:CompostBag,
+       Time:100.0,
+       Category:Farming,
+       Tool:Shovel,
+    }
+}
