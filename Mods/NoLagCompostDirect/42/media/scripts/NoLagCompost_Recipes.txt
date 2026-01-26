@@ -1,16 +1,52 @@
 module Base
 {
-    craftRecipe MakeCompostBagFromGrass
+    craftRecipe CreateCompostFromGras
     {
         timedAction = PutSeedsInPacket,
-        time = 100,
+        time = 300,
         Tags = InHandCraft;Farming,
         category = Farming,
         inputs
         {
 			item 1 [Base.EmptySandbag],
-            item 50 [Base.GrassTuft;Base.HayTuft],
-			item 1 [Base.Shovel;Base.SpadeForged] mode:keep flags[MayDegradeVeryLight],
+            item 75 [Base.GrassTuft;Base.HayTuft],
+			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.CompostBag,
+        }
+    }
+	
+    craftRecipe CreateCompostFromWood
+    {
+        timedAction = PutSeedsInPacket,
+        time = 300,
+        Tags = InHandCraft;Farming,
+        category = Farming,
+        inputs
+        {
+			item 1 [Base.EmptySandbag],
+            item 30 [Base.Splinters;Base.Twigs],
+			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.CompostBag,
+        }
+    }
+	
+    craftRecipe CreateCompostFromDung
+    {
+        timedAction = PutSeedsInPacket,
+        time = 300,
+        Tags = InHandCraft;Farming,
+        category = Farming,
+        inputs
+        {
+			item 1 [Base.EmptySandbag],
+            item 8 [Base.Dung_Cow;Base.Dung_Pig;Base.Dung_Raccoon;Base.Dung_Turkey;Base.Dung_Sheep],
+			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
         }
         outputs
         {
