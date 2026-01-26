@@ -1240,4 +1240,56 @@ SandboxVars = {
         -- Min: 0 Max: 11 Default: 7
         NeedCookingLevelForOthers = 4,
     },
+    RealisticCarPhysics = {
+        SoundOverhaulBeta = false,
+        HPWeightOverhaulBeta = false,
+        TrunkOverhaulBeta = false,
+        -- Min: 0.01 Max: 100.00 Default: 1.00
+        TrunkMultiplier = 1.0,
+        AutoStart = true,
+        EasyTow = true,
+        -- Min: 0.00 Max: 5.00 Default: 1.00
+        TorqueModifierSport = 1.0,
+        -- Min: 0.00 Max: 5.00 Default: 1.00
+        TorqueModifierStandard = 1.0,
+        -- Min: 0.00 Max: 5.00 Default: 1.00
+        TorqueModifierHeavyDuty = 1.0,
+        -- Min: 1.00 Max: 4.00 Default: 2.50
+        TorqueMultiplierLimit = 2.5,
+        TorqueModifierIndivual = "Step Van:0.95/Valuline:0.95",
+        SpeedOverride = "Step Van:80/Valuline:70",
+        -- Min: 5.00 Max: 120.00 Default: 40.00
+        ReverseSpeedMax = 40.0,
+        -- Min: 0.00 Max: 10.00 Default: 0.70
+        AerodynamicDragSport = 0.7,
+        -- Min: 0.00 Max: 10.00 Default: 1.00
+        AerodynamicDragStandard = 1.0,
+        -- Min: 0.00 Max: 10.00 Default: 1.50
+        AerodynamicDragHeavyDuty = 1.5,
+        -- Min: 0.00 Max: 10.00 Default: 0.05
+        RollingResistance = 0.05,
+        -- Min: 0.00 Max: 10.00 Default: 0.10
+        RollingResistanceSpeed = 0.1,
+        -- Min: 0.00 Max: 10.00 Default: 0.20
+        OffroadRollingResistance = 0.2,
+        -- Min: 0.00 Max: 10.00 Default: 1.00
+        OffroadRollingResistanceSpeed = 1.0,
+        TractionModification = true,
+        -- Min: 0.00 Max: 10.00 Default: 1.00
+        OverallTraction = 1.0,
+        -- Min: 0.00 Max: 10.00 Default: 1.00
+        AccelerationTraction = 1.0,
+        -- Min: 0.00 Max: 1.00 Default: 0.60
+        TractionOffroad = 0.6,
+        -- Min: 0.00 Max: 1.00 Default: 0.70
+        TractionRaining = 0.7,
+        -- Min: 0.00 Max: 1.00 Default: 0.40
+        TractionSnow = 0.4,
+        -- Min: 0.00 Max: 10.00 Default: 0.30
+        PlantImpulse = 0.3,
+        -- Min: 0.00 Max: 10.00 Default: 0.50
+        ZombieImpulse = 0.5,
+        -- Min: 0.00 Max: 10.00 Default: 1.00
+        CorpseImpulse = 1.0,
+    },
 }

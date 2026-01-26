@@ -6,11 +6,12 @@ module Base
         time = 300,
         Tags = InHandCraft;Farming,
         category = Farming,
+		xpAward = Farming:10,
         inputs
         {
-			item 1 [Base.EmptySandbag],
-            item 75 [Base.GrassTuft;Base.HayTuft],
 			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.EmptySandbag],
+            item 100 [Base.HayTuft;Base.GrassTuft] flags[ItemCount],
         }
         outputs
         {
@@ -24,11 +25,12 @@ module Base
         time = 300,
         Tags = InHandCraft;Farming,
         category = Farming,
+		xpAward = Farming:10,
         inputs
         {
+			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
 			item 1 [Base.EmptySandbag],
             item 30 [Base.Splinters;Base.Twigs],
-			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
         }
         outputs
         {
@@ -42,11 +44,12 @@ module Base
         time = 300,
         Tags = InHandCraft;Farming,
         category = Farming,
+		xpAward = Farming:10,
         inputs
         {
+			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
 			item 1 [Base.EmptySandbag],
             item 8 [Base.Dung_Cow;Base.Dung_Pig;Base.Dung_Raccoon;Base.Dung_Turkey;Base.Dung_Sheep],
-			item 1 [Base.Shovel;Base.Shovel2;Base.SpadeForged;Base.GardenFork;Base.GardenFork_Forged;Base.HandShovel] mode:keep flags[MayDegradeVeryLight],
         }
         outputs
         {
